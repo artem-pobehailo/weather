@@ -1,11 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      * {
+        transition: all 0.1s ease-in;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+       box-sizing: border-box;}
+        body {
+          
+        margin: 0;
+        }
+         h1, p { margin: 0; padding: 0; }
+      
+    </style>
+
+    <title>Weather Forecast</title>
+  </head>
+  <body class="bg-gray-100">
+    <div
+      class="max-w-[1440px] mx-auto bg-[#39c] border-[25px] border-[#2b81ac] py-[60px] px-[113px] text-center h-full "
+    >
+      <h1 class="text-left text-white text-4xl mb-[35px] ">
+        CSS Weather Forecast <i class="wi wi-sunrise text-5xl "></i>
+      </h1>
+<div class="text-[0] text-left wrap-nowrap m-auto">
     
-</body>
+          <div
+            class="max-w-[583px] w-full border-[2px] border-[#fff] h-full text-center py-[26px] inline-block  bg-[#2b81ac] inline-block"
+          >
+            <p class="text-center text-white text-[21px]">Lisbon</p>
+            <p class="text-center text-white text-[21px]">
+              21°C <i class="wi wi-day-sunny text-4xl align-middle pl-1 "></i>
+            </p>
+          </div>
+    
+           <div
+            class="max-w-[291px] w-full border-[2px] border-[#fff] h-full text-center py-[26px] inline-block  bg-[#3c] inline-block"
+          >
+            <p class="text-center text-white text-[21px]">Paris</p>
+            <p class="text-center text-white text-[21px]">
+              11°C <i class="wi wi-night-hail text-4xl align-middle pl-1 "></i>
+            </p>
+          </div>
+
+           <div
+            class="max-w-[291px] w-full border-[2px] border-[#fff] h-full text-center py-[26px] inline-block  bg-[#969] inline-block"
+          >
+            <p class="text-center text-white text-[21px]">Belgrade</p>
+            <p class="text-center text-white text-[21px]">
+              15°C <i class="wi wi-day-cloudy text-4xl align-middle pl-1 "></i>
+            </p>
+          </div>
+
+           <div
+            class="max-w-[291px] w-full border-[2px] border-[#fff] h-full text-center py-[26px] inline-block  bg-[#c24747] inline-block"
+          >
+            <p class="text-center text-white text-[21px]">Venice</p>
+            <p class="text-center text-white text-[21px]">
+              21°C <i class="wi wi-day-cloudy-high text-4xl align-middle pl-1 "></i>
+            </p>
+          </div>
+
+           <div
+            class="max-w-[291px] w-full border-[2px] border-[#fff] h-full text-center py-[26px] inline-block  bg-[#e2674a] inline-block"
+          >
+            <p class="text-center text-white text-[21px]">Tel-Avive</p>
+            <p class="text-center text-white text-[21px]">
+              32°C<i class="wi wi-hot text-4xl align-middle pl-1 "></i>
+            </p>
+          </div>
+
+           <div
+            class="max-w-[291px] w-full border-[2px] border-[#fff] h-full text-center py-[26px] inline-block  bg-[#fc6] inline-block"
+          >
+            <p class="text-center text-white text-[21px]">Cair</p>
+            <p class="text-center text-white text-[21px]">
+              21°C <i class="wi wi-day-sunny text-4xl align-middle pl-1 "></i>
+            </p>
+          </div>
+
+           <div
+            class="max-w-[291px] w-full border-[2px] border-[#fff] h-full text-center py-[26px] inline-block  bg-[#9c9] inline-block"
+          >
+            <p class="text-center text-white text-[21px]">New-York</p>
+            <p class="text-center text-white text-[21px]">
+              17°C <i class="wi wi-day-sleet-storm text-4xl align-middle pl-1 "></i>
+            </p>
+          </div>
+
+           <div
+            class="max-w-[291px] w-full border-[2px] border-[#fff] h-full text-center py-[26px] inline-block  bg-[#699] inline-block"
+          >
+            <p class="text-center text-white text-[21px]">New-Delhi</p>
+            <p class="text-center text-white text-[21px]">
+              17°C<i class="wi wi-rain-wind text-4xl align-middle pl-1 "></i>
+            </p>
+          </div>
+
+           <div
+            class="max-w-[583px] w-full border-[2px] border-[#fff] h-full text-center py-[26px] inline-block  bg-[#c69] inline-block"
+          >
+            <p class="text-center text-white text-[21px]">San-Francisco</p>
+            <p class="text-center text-white text-[21px]">
+              15°C <i class="wi wi-day-sunny-overcast text-4xl align-middle pl-1 "></i>
+            </p>
+          </div>
+
+           <div
+            class="max-w-[291px] w-full border-[2px] border-[#fff] h-full text-center py-[26px] inline-block  bg-[#396] inline-block"
+          >
+            <p class="text-center text-white text-[21px]">Tokyo</p>
+            <p class="text-center text-white text-[21px]">
+              8°C <i class="wi wi-night-clear text-4xl align-middle pl-1 "></i>
+            </p>
+          </div>
+
+           <div
+            class="max-w-[1165px] w-full border-[2px] border-[#fff] h-full text-center py-[26px] inline-block  bg-[#669] inline-block"
+          >
+            <p class="text-center text-white text-[21px]">Sydney</p>
+            <p class="text-center text-white text-[21px]">
+              25°C <i class="wi wi-night-cloudy-high text-4xl align-middle pl-1 "></i>
+            </p>
+          </div>
+</div>
+
+<p class="text-left text-white text-[16px] mt-[35px] ">Have a nice day and don't forget umbrella if you are in New Delhi now!</p>
+
+
+    </div>
+  </body>
 </html>
